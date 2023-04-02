@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>Resource/copy.svg</file>
         <file>Resource/VWC.ico</file>
+        <file>Resource/github.svg</file>
     </qresource>
 </RCC>

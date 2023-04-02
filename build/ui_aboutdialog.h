@@ -28,7 +28,7 @@ public:
         if (AboutDialog->objectName().isEmpty())
             AboutDialog->setObjectName(QString::fromUtf8("AboutDialog"));
         AboutDialog->setEnabled(true);
-        AboutDialog->resize(731, 526);
+        AboutDialog->resize(731, 723);
         AboutDialog->setWindowOpacity(1.000000000000000);
         AboutDialog->setSizeGripEnabled(false);
         AboutDialog->setModal(false);
@@ -37,6 +37,10 @@ public:
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
         textBrowser = new QTextBrowser(AboutDialog);
         textBrowser->setObjectName(QString::fromUtf8("textBrowser"));
+        textBrowser->setFrameShape(QFrame::StyledPanel);
+        textBrowser->setFrameShadow(QFrame::Sunken);
+        textBrowser->setLineWidth(1);
+        textBrowser->setOpenExternalLinks(true);
 
         horizontalLayout->addWidget(textBrowser);
 
@@ -48,7 +52,7 @@ public:
 
     void retranslateUi(QDialog *AboutDialog)
     {
-        AboutDialog->setWindowTitle(QCoreApplication::translate("AboutDialog", "About Visual Window Controller", nullptr));
+        AboutDialog->setWindowTitle(QCoreApplication::translate("AboutDialog", "About Visual Windows Controller", nullptr));
 #if QT_CONFIG(whatsthis)
         AboutDialog->setWhatsThis(QCoreApplication::translate("AboutDialog", "<html><head/><body><p><img src=\":/Resource/VWC.ico\"/></p></body></html>", nullptr));
 #endif // QT_CONFIG(whatsthis)
@@ -72,7 +76,9 @@ public:
                         "px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Warning: Child windows are temporarily not compatible!</p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">All source code for this project has been placed on GitHub,</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">You can find this project on <a href=\"https://github.com/lrHuanhuan/VisualWindowController\"><span style=\" text-decoration: underline; color:#8ab4f8;\">Visual Window Controller</span></a><br /></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">You can find this project on:</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"> <img src=\":/Resource/github.svg\" /> <a href=\"https://github.com/lrHuanhuan/VisualWindowsController\"><span style=\" text-decoration: underline; color:#8ab4f8;\">lrHuanhuan/VisualWindowsController: Visual capture window information and control window (github.com)</spa"
+                        "n></a><br /></p>\n"
 "<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Copyright (c) 2023 YangHuanhuan 3347484963@qq.com. All rights reserved.</p></body></html>", nullptr));
     } // retranslateUi
 

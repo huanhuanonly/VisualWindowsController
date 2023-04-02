@@ -438,7 +438,8 @@ compiler_rcc_clean:
 release\qrc_Resource.cpp: ..\Resource.qrc \
 		C:\Qt\5.15.2\msvc2019_64\bin\rcc.exe \
 		..\Resource\VWC.ico \
-		..\Resource\copy.svg
+		..\Resource\copy.svg \
+		..\Resource\github.svg
 	C:\Qt\5.15.2\msvc2019_64\bin\rcc.exe -name Resource ..\Resource.qrc -o release\qrc_Resource.cpp
 
 release\qrc_qmake_qmake_qm_files.cpp: release\qmake_qmake_qm_files.qrc \
@@ -2394,9 +2395,8 @@ release\BinsetEdit.obj: ..\BinsetEdit\BinsetEdit.cpp ..\BinsetEdit\BinsetEdit.h 
 		C:\Qt\5.15.2\msvc2019_64\include\QtGui\QPainter
 
 release\ProcessController.obj: ..\ProcessController\ProcessController.cpp ..\ProcessController\ProcessController.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtCore\QString \
-		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qstring.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qchar.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qwindowdefs_win.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qtguiglobal.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qglobal.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qconfig-bootstrapped.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qconfig.h \
@@ -2418,6 +2418,10 @@ release\ProcessController.obj: ..\ProcessController\ProcessController.cpp ..\Pro
 		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qmutex.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnumeric.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qversiontagging.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qtgui-config.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\QString \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qstring.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qchar.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qbytearray.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qrefcount.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qnamespace.h \
@@ -2442,7 +2446,62 @@ release\ProcessController.obj: ..\ProcessController\ProcessController.cpp ..\Pro
 		C:\Qt\5.15.2\msvc2019_64\include\QtCore\QDateTime \
 		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qdatetime.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qshareddata.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qhash.h
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qhash.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\QMap \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qmap.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qdebug.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qtextstream.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qiodevice.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qobject.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qobjectdefs.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qobjectdefs_impl.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qcoreevent.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qscopedpointer.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qmetatype.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qvarlengtharray.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qcontainerfwd.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qobject_impl.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qlocale.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qvariant.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qset.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qcontiguouscache.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qsharedpointer.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qsharedpointer_impl.h \
+		..\WindowController\WindowController.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\QMultiMap \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\QRect \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qrect.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qmargins.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qsize.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\QSizeF \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\QColor \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qcolor.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qrgb.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qrgba64.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\QTime \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\QPixmap \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qpixmap.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qpaintdevice.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qwindowdefs.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qimage.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qpixelformat.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qtransform.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qmatrix.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qpolygon.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qregion.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qdatastream.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qline.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\QScreen \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qscreen.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\QList \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\QObject \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\QSize \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\QTransform \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\QGuiApplication \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qguiapplication.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qcoreapplication.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qeventloop.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qinputmethod.h
 
 release\RadixLineEdit.obj: ..\RadixLineEdit\RadixLineEdit.cpp ..\RadixLineEdit\RadixLineEdit.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QLineEdit \
@@ -3236,11 +3295,6 @@ release\mainwindow.obj: ..\mainwindow.cpp ..\mainwindow.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qtextformat.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QListView \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qlistview.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QMenuBar \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qmenubar.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qmenu.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qaction.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qactiongroup.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QPushButton \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qpushbutton.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QRadioButton \
@@ -3675,11 +3729,6 @@ release\CursorColorWidget.obj: ..\tabCursor\CursorColorWidget.cpp ..\mainwindow.
 		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qtextformat.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QListView \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qlistview.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QMenuBar \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qmenubar.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qmenu.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qaction.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qactiongroup.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QPushButton \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qpushbutton.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QRadioButton \
@@ -4117,11 +4166,6 @@ release\tabProcess.obj: ..\tabProcess\tabProcess.cpp ..\mainwindow.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qtextformat.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QListView \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qlistview.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QMenuBar \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qmenubar.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qmenu.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qaction.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qactiongroup.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QPushButton \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qpushbutton.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QRadioButton \
@@ -4556,11 +4600,6 @@ release\Basic.obj: ..\tabSelect\Basic.cpp ..\mainwindow.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qtextformat.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QListView \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qlistview.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QMenuBar \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qmenubar.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qmenu.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qaction.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qactiongroup.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QPushButton \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qpushbutton.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QRadioButton \
@@ -4995,11 +5034,6 @@ release\Dynamic.obj: ..\tabSelect\Dynamic.cpp ..\mainwindow.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qtextformat.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QListView \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qlistview.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QMenuBar \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qmenubar.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qmenu.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qaction.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qactiongroup.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QPushButton \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qpushbutton.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QRadioButton \
@@ -5434,11 +5468,6 @@ release\Static.obj: ..\tabSelect\Static.cpp ..\mainwindow.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qtextformat.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QListView \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qlistview.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QMenuBar \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qmenubar.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qmenu.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qaction.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qactiongroup.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QPushButton \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qpushbutton.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QRadioButton \
@@ -5873,11 +5902,6 @@ release\ChangeWindow.obj: ..\tabWindow\ChangeWindow.cpp ..\mainwindow.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtGui\qtextformat.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QListView \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qlistview.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QMenuBar \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qmenubar.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qmenu.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qaction.h \
-		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qactiongroup.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QPushButton \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qpushbutton.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QRadioButton \

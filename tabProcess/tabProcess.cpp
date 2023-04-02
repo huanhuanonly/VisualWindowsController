@@ -14,6 +14,8 @@ void MainWindow::on_openExplorerButton_clicked()
 
 void MainWindow::on_processIdLineEdit_textChanged(const QString &arg1)
 {
+    Q_UNUSED(arg1);
+    
     if (this->m_currentTabPage != CurrentTabPage::Process) return;
     
     QMap<HWND, QVector<HWND>> tree = process->windowTreeFromThisProcess();
@@ -22,13 +24,17 @@ void MainWindow::on_processIdLineEdit_textChanged(const QString &arg1)
     QTreeWidgetItemIterator it(ui->processWindowTreeWidget);
     while (*it)
     {
-        QTreeWidgetItemIterator it_child(*it);
-        while (*it_child)
+        int cnt = (*it)->childCount();
+        if (cnt)
         {
-            delete *it_child;
-            ++it_child;
+            for (int i = 0; i < cnt; ++i)
+            {
+                auto temp = (*it)->child(i);
+                
+                (*it)->removeChild(temp);
+                delete temp;
+            }
         }
-        (*it)->takeChildren();
         ui->processWindowTreeWidget->takeTopLevelItem(ui->processWindowTreeWidget->indexOfTopLevelItem(*it));
         delete *it;
         ++it;

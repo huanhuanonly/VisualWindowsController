@@ -576,13 +576,17 @@ void MainWindow::updateWindowTreeInSelectionPage() noexcept
     QTreeWidgetItemIterator it(ui->staticWindowsTreeWidget);
     while (*it)
     {
-        QTreeWidgetItemIterator it_child(*it);
-        while (*it_child)
+        int cnt = (*it)->childCount();
+        if (cnt)
         {
-            delete *it_child;
-            ++it_child;
+            for (int i = 0; i < cnt; ++i)
+            {
+                auto temp = (*it)->child(i);
+                
+                (*it)->removeChild(temp);
+                delete temp;
+            }
         }
-        (*it)->takeChildren();
         ui->staticWindowsTreeWidget->takeTopLevelItem(ui->staticWindowsTreeWidget->indexOfTopLevelItem(*it));
         delete *it;
         ++it;

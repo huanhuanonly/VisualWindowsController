@@ -1597,7 +1597,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Visual Window Controller", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Visual Windows Controller", nullptr));
         selectionModeLabel->setText(QCoreApplication::translate("MainWindow", "Selection Mode:", nullptr));
         dynamicButton->setText(QCoreApplication::translate("MainWindow", "Use Dynamic", nullptr));
         staticButton->setText(QCoreApplication::translate("MainWindow", "Use Static", nullptr));

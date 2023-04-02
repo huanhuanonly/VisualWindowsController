@@ -101,7 +101,7 @@ private slots:
     
     void on_currentHwndEdit_valueChange(unsigned long long int value);
     
-    void on_titleEdit_textEdited(const QString &arg1);
+    void on_titleEdit_textEdited(const QString& arg1);
     
     void on_closeWindowButton_clicked();
     void on_destroyWindowButton_clicked();
@@ -151,7 +151,7 @@ private slots:
     void on_rectBottomSpinBox_valueChanged(int arg1);
     void on_rectBottomSlider_valueChanged(int value);
     
-    void on_processIdLineEdit_textChanged(const QString &arg1);
+    void on_processIdLineEdit_textChanged(const QString& arg1);
     
 private:
     void sf_setBinsetEditTips() noexcept;
