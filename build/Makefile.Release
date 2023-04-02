@@ -437,7 +437,10 @@ compiler_rcc_clean:
 	-$(DEL_FILE) release\qrc_Resource.cpp release\qrc_qmake_qmake_qm_files.cpp
 release\qrc_Resource.cpp: ..\Resource.qrc \
 		C:\Qt\5.15.2\msvc2019_64\bin\rcc.exe \
+		..\Resource\lockInfo.svg \
 		..\Resource\VWC.ico \
+		..\Resource\lockHwnd.svg \
+		..\Resource\saveInfo.svg \
 		..\Resource\copy.svg \
 		..\Resource\github.svg
 	C:\Qt\5.15.2\msvc2019_64\bin\rcc.exe -name Resource ..\Resource.qrc -o release\qrc_Resource.cpp
@@ -3090,7 +3093,9 @@ release\main.obj: ..\main.cpp ..\mainwindow.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qdialog.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtCore\QLocale \
 		C:\Qt\5.15.2\msvc2019_64\include\QtCore\QTranslator \
-		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qtranslator.h
+		C:\Qt\5.15.2\msvc2019_64\include\QtCore\qtranslator.h \
+		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QMessageBox \
+		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\qmessagebox.h
 
 release\mainwindow.obj: ..\mainwindow.cpp ..\mainwindow.h \
 		C:\Qt\5.15.2\msvc2019_64\include\QtWidgets\QMainWindow \

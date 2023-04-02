@@ -3,5 +3,8 @@
         <file>Resource/copy.svg</file>
         <file>Resource/VWC.ico</file>
         <file>Resource/github.svg</file>
+        <file>Resource/lockHwnd.svg</file>
+        <file>Resource/lockInfo.svg</file>
+        <file>Resource/saveInfo.svg</file>
     </qresource>
 </RCC>

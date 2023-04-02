@@ -171,6 +171,9 @@ QPushButton:pressed, QPushButton:checked {
     lockInfo->setText(tr("lI"));
     lockHwnd->setText(tr("lW"));
     
+    lockInfo->setIcon(QIcon(":/Resource/lockInfo.svg"));
+    lockHwnd->setIcon(QIcon(":/Resource/lockHwnd.svg"));
+    
     lockInfo->setToolTip(tr("Lock Info (Ctrl + L)"));
     lockHwnd->setToolTip(tr("Lock Hwnd (Ctrl + W)"));
     
@@ -195,6 +198,7 @@ QPushButton:pressed, QPushButton:checked {
     
     QToolButton* save = new QToolButton(this);
     save->setText(tr("Save"));
+    save->setIcon(QIcon(":/Resource/saveInfo.svg"));
     save->setToolTip(tr("Save all info to clipboard (Ctrl + S)"));
     save->setShortcut(QString("Ctrl+S"));
     connect(save, &QToolButton::clicked, this, &MainWindow::saveAllInfoToClipboard);
