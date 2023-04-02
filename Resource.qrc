@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resource/copy.svg</file>
+        <file>Resource/VWC.ico</file>
+    </qresource>
+</RCC>
