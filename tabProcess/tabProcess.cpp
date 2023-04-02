@@ -12,7 +12,7 @@ void MainWindow::on_openExplorerButton_clicked()
     QProcess::startDetached(QString(R"(explorer "/select,%1")").arg(hwnd->windowInfoStatic().fromPath));
 }
 
-void MainWindow::on_processIdLineEdit_textChanged(const QString &arg1)
+void MainWindow::on_processIdLineEdit_textChanged(const QString& arg1)
 {
     Q_UNUSED(arg1);
     
